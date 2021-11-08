@@ -15,10 +15,6 @@ export default class TrelloController {
     const progressCards = JSON.parse(localStorage.progress);
     const doneCards = JSON.parse(localStorage.done);
 
-    console.log(todoCards);
-    console.log(progressCards);
-    console.log(doneCards);
-
     this.drawCards(this.todoColumn, todoCards);
     this.drawCards(this.progressColumn, progressCards);
     this.drawCards(this.doneColumn, doneCards);
